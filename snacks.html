@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grocery Store</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <!-- Font awesome cdn link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
+  <!-- Custom css file link -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <style>
+    /* Additional CSS Styles */
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 0;
+    }
+
+    .heading {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 36px;
+      color: #333;
+    }
+
+    .heading span {
+      color: #ff7800;
+    }
+
+    .products {
+      padding: 50px 0;
+    }
+
+    .product-slider {
+      margin-top: 30px;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .swiper-slide img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    .swiper-slide h3 {
+      font-size: 24px;
+      margin-top: 20px;
+      color: #333;
+    }
+
+    .price {
+      font-size: 18px;
+      color: #555;
+      margin-top: 10px;
+    }
+
+    .stars {
+      margin-top: 10px;
+    }
+
+    .stars i {
+      color: #ff7800;
+      font-size: 18px;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: white;
+      color: black;
+      padding: 10px 20px;
+      margin-top: 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #ff7800;
+      color: #f8f9fa;
+    }
+    
+    .swiper-slide.box {
+      width: calc(100% / 2); /* Set width for 2 slides per row */
+      float: left;
+      box-sizing: border-box;
+      padding: 10px;
+    }
+    
+    @media (max-width: 576px) {
+      .swiper-slide.box {
+        width: 100%; /* Set width for 1 slide per row on smallest screens */
+      }
+    }
+    
+    /* Add CSS for the image at the middle */
+    .middle-image {
+      display: block;
+      margin: 0 auto; /* Center the image horizontally */
+      max-width: 80%; /* Adjust the maximum width of the image */
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px; /* Add spacing at the bottom */
+    }
+  </style>
+</head>
+
+<body>
+  <section class="products" id="products">
+
+    <h1 class="heading">Snacks<span>products</span></h1>
+
+    <!-- Add the image here -->
+    
+    <!-- End of image -->
+
+    <div class="swiper product-slider">
+
+      <div class="swiper-wrapper">
+
+        <!-- Repeat the following swiper-slide box for each product -->
+        
+        <div class="swiper-slide box" style="text-align: center;">
+            <img src="img/bananachipsspycy.png" alt="" style="align-content: center;">
+            <h3>Spicy Banana Chips</h3>
+            <div class="price">₹ 10-40/kg</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <h4>Minimum quantity = 1-Tonne</h4>
+            <a href="#" class="btn">Add to cart</a>
+          </div>
+
+          <div class="swiper-slide box" style="text-align: center;">
+            <img src="img/Chips.png" alt="" style="align-content: center;">
+            <h3>Saulty Banana Chips</h3>
+            <div class="price">₹ 65-80/kg</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <h4>Minimum quantity = 1-Tonne</h4>
+            <a href="#" class="btn">Add to cart</a>
+          </div>
+        <!-- End of swiper-slide -->
+      </div>
+    </div>
+
+  </section>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
